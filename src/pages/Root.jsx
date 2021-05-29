@@ -2,8 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StoreProvider from "../components/Store/Provider";
 import RoutesPrivate from "../components/Routes/Private/Private";
-import Logged from "./Logged";
+import Home from "./Home";
 import LogIn from "./LogIn";
+import Justify from "./Justify";
 import "../App.css";
 const PagesRoot = () => (
   <Router>
@@ -12,8 +13,10 @@ const PagesRoot = () => (
         <div className="App">
           <div className="App__Aside"></div>
           <div className="App__Form">
-            <Route path="/logIn" component={LogIn} />
-            <RoutesPrivate path="/" component={Logged} />
+            <Route exact path="/logIn" component={LogIn} />
+            <RoutesPrivate exact path="/" component={Home} />
+
+            <RoutesPrivate exact path="/Justify" component={Justify} />
           </div>
         </div>
       </Switch>
