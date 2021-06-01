@@ -1,11 +1,11 @@
 import React from "react";
 
-const Entrada = () => {
+const Out = () => {
   return (
     <div className="FormField" style={{ display: "inline-block" }}>
-      <button className="FormField__Button mr-20">Entrada</button>
+      <button className="FormField__Button mr-20">Saída</button>
     </div>
   );
 };
 
-export default Entrada;
+export default Out;

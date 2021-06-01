@@ -1,6 +1,7 @@
 import React from "react";
+import Send from "../components/buttons/Send";
 
-const Justify = () => {
+const History = () => {
   return (
     <>
       <div className="FormTitle">
@@ -10,11 +11,13 @@ const Justify = () => {
           </p>
         </h1>
       </div>
-      <div className="FormTitle">
-        <input type="text" maxLength="500" />
+
+      <div className="FormTitle ">
+        <textarea className="input_history" type="text" maxLength="500" />
       </div>
+      <Send />
     </>
   );
 };
 
-export default Justify;
+export default History;

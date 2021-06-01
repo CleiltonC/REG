@@ -1,7 +1,8 @@
 import React from "react";
-import Entrada from "../components/buttons/Entrada";
-import Saida from "../components/buttons/Saida";
-import JustifyButton from "../components/buttons/JustifyButton";
+import In from "../components/buttons/In";
+import Out from "../components/buttons/Out";
+import Exit from "../components/buttons/Exit";
+import HistoryButton from "../components/buttons/HistoryButton";
 import Time from "../utils/Time";
 
 const Home = () => {
@@ -18,11 +19,15 @@ const Home = () => {
 
       <Time />
 
-      <Entrada />
+      <In />
 
-      <Saida />
+      <Out />
 
-      <JustifyButton />
+      <div className="bottom">
+        <Exit />
+
+        <HistoryButton />
+      </div>
     </>
   );
 };
