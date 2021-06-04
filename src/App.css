@@ -121,6 +121,12 @@
   left: 85%;
 }
 
+.InOut_Buttons {
+  width: 100%;
+  display: flex;
+  align-content: flex;
+}
+
 .FormField__Link {
   color: #66707d;
   text-decoration: none;

@@ -5,8 +5,10 @@ import Exit from "../components/buttons/Exit";
 import HistoryButton from "../components/buttons/HistoryButton";
 import Time from "../utils/Time";
 
+import HourProvider from "../components/Store/HourContext";
+
 const Home = () => {
-  document.title = "Home";
+  document.title = "REP Home";
   return (
     <>
       <div className="FormTitle">
@@ -18,10 +20,13 @@ const Home = () => {
       </div>
 
       <Time />
+      <HourProvider>
+        <div className="InOut_Buttons">
+          <In />
 
-      <In />
-
-      <Out />
+          <Out />
+        </div>
+      </HourProvider>
 
       <div className="bottom">
         <Exit />
